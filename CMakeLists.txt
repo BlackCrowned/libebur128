@@ -9,7 +9,7 @@ target_include_directories(ebur128 PUBLIC ${PROJECT_SOURCE_DIR})
 
 if(WIN32)
   target_compile_definitions(ebur128 PRIVATE _USE_MATH_DEFINES=1)
-  target_include_directories(ebur128 SYSTEM PRIVATE ${PROJECT_SOURCE_DIR}/queue)
+  target_include_directories(ebur128 SYSTEM PRIVATE ${PROJECT_SOURCE_DIR}/ebur128/queue)
 endif()
 
 find_library(MATH_LIBRARY m)
